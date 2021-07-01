@@ -1421,9 +1421,10 @@ margin-right:5vw;
 
 /*--------------  chief mentors styles   ---------------------------------*/
 
-.cmentors{
+			.cmentors{
                 height:50vw;
                 position: relative;
+				top:-320px;
                 text-align: center;
                 background:transparent;
                 overflow: hidden;
