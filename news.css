@@ -1,0 +1,643 @@
+body{
+    margin:0;
+}
+
+.tbblock{
+    width:100%;
+    padding-bottom: 3vw;
+    position: relative;
+    height:6vw;
+}
+
+.title{
+    height:7vw;
+    width:38%;
+    font-size: 2.3vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700px;
+    float:left;
+    padding-top: 1vw;
+    position: absolute;
+    padding-left: 5%;
+}
+
+.title h1{
+  margin:0;
+  float:left;
+}
+
+.backb{
+                      
+    width:14%;
+    background-color:black;
+    color: #fb8b24;
+    position: absolute;
+    top:3vw;
+    right:5vw;
+    padding-top: .6%;
+    padding-bottom: .6%;
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .backb a{
+    color: #fb8b24;
+    text-decoration: none;
+  }
+
+  .backb a:hover{
+    color:white;
+  }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 100ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 640px;
+  position: relative;
+  transition: all 1s ease-in-out;
+  z-index: 2;
+
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 100ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #fb8b24;
+}
+.popup .content {
+  height: 70%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+.wrapper {
+    margin-top:2%;
+    width:90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    overflow: hidden;
+    border-radius: 7px 7px 7px 7px;
+    /* VIA CSS MATIC https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    position: relative;
+    height:auto;
+  }
+
+.regbtn a{
+  color: #fb8b24; 
+  text-decoration: none;
+}
+
+  .regbtn a:hover {
+color: black;
+  }
+
+   .wrapper h1 {
+    margin: 0;
+  padding: 0;
+  font-size:2.2vw;
+  font-family: 'Do Hyeon', sans-serif;
+  color:#fb8b24;
+  padding-top: 1vw;
+} 
+
+.wrapper h2 {
+  margin: 0 ;
+  padding:0;
+  font-size: 1.3vw;
+  font-family: 'Raleway', sans-serif;
+  color: #78290f;
+  padding-top: 1vw;
+} 
+
+ .wrapcont{
+  position: absolute;
+  left:35%;
+  width:60%;
+  height:auto;
+  top: 0;
+
+} 
+
+   .wrapper p{
+    font-size: 1.3vw;
+  } 
+
+.wrapper:last-child{
+    margin-bottom: 5%;
+}
+  
+   .product-img img {
+    border-radius: 7px 0 0 7px;
+   height: auto;
+   width:30%;
+  }  
+
+  .botimg{
+      width:100%;
+  }
+
+  .botimg img{
+    width:100%; 
+  }
+
+  .contact{
+    width:100%;
+    height:16vw;
+    position: relative;
+    font-size: 2vw;
+    background-color: #232323;
+    
+   
+  
+    color:#9f9fa0;
+    font-family: 'Bebas Neue', cursive;
+
+  }
+
+.contact a:hover{
+color:#fb8b24  ;
+}
+
+  .contactsect{
+    display: inline-table;
+    padding-left: 10%;
+    padding-right: 8%;
+    
+  }
+ 
+  .contact h1{
+    padding-bottom: .5vw;
+    padding-top: .5vw;
+    color:#fb8b24  ;
+    font-family: 'Kaushan Script', cursive;
+padding-right: 7%;
+    font-size: 3vw;
+    margin:0;
+    font-weight: bolder;  
+    text-align: center;
+    margin-bottom: .5vw;
+  }
+ 
+  .contact h2{
+    color:#fb8b24  ;
+    font-family: 'Noto Serif', serif;
+   letter-spacing: .2vw;
+   font-size:1.3vw;
+   font-weight: 700px;
+   text-align: center;
+ }
+ 
+ .contact h3{
+  font-size: 1.3vw;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  height: 2vw;
+  }
+
+   .contact a{
+     text-decoration: none;
+     color: grey;
+   }
+
+   .yround4{
+    width:1.5vw;
+    height:1.5vw;
+    background-color:grey;
+    margin:0;
+    border-radius: 50%; 
+    position: relative;
+    bottom:1.5vw;
+    left:8.5vw;
+  }
+  
+  .yround4:hover{
+    cursor: pointer;
+    background-color:#fb8b24;
+  }
+  
+  .yround4 img{
+    width:60%;
+    height: auto;
+    padding-top: 20%;
+  }
+
+  .yround5{
+    width:1.5vw;
+    height:1.5vw;
+    background-color:grey;
+    margin:0;
+    border-radius: 50%; 
+    position: relative;
+    bottom:3vw;
+    left:10.5vw;
+  }
+  
+  .yround5:hover{
+    cursor: pointer;
+    background-color:#fb8b24;
+  }
+  
+  .yround5 img{
+    width:60%;
+    height: auto;
+    padding-top: 20%;
+  }
+
+  .yround6{
+    width:1.5vw;
+    height:1.5vw;
+    background-color:grey;
+    margin:0;
+    border-radius: 50%; 
+    position: relative;
+    bottom:1.5vw;
+    left:8.5vw;
+  }
+  
+  .yround6:hover{
+    cursor: pointer;
+    background-color:#fb8b24;
+  }
+  
+  .yround6 img{
+    width:60%;
+    height: auto;
+    padding-top: 20%;
+  }
+
+  .socic1{
+    width:3vw;
+    height:3vw;
+    background-color:grey;
+    margin:0;
+    border-radius: 5px; 
+    position: relative;
+    left:30%;
+  }
+
+  .socic1 img{
+    width:80%;
+    height: auto;
+    padding-top: 20%;
+    padding-left:25%;
+  }
+
+  .socic1:hover{
+    cursor: pointer;
+    background-color:#fb8b24;
+  }
+
+   .footer{
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    height:2vw;
+    font-size: 1vw;
+    text-align: center;
+    color: grey;
+    background-color: rgb(26, 25, 25);
+    vertical-align: middle;
+    position: relative;
+
+   }
+
+   .footer h4{
+     margin:0;
+     padding-top: .5%;
+     padding-right: 3vw;
+   }
+
+
+     /* .......................................................TABLETS..................................................... */
+ /* .......................................................TABLETS..................................................... */
+
+
+@media (max-width: 768px) {
+
+.tbblock{
+  height:12vw;
+}
+
+    .title{
+        height:8vw;
+        width:90%;
+        font-size: 4.3vw;
+        position: absolute;
+  
+    }
+    
+    .backb{
+                          
+        width:20%;
+        position: absolute;
+        top:5vw;
+        right:5vw;
+        font-size: 2.3vw;
+      }
+
+      iframe{
+        width:400px;
+      }
+      
+      .popup{
+        width:400px;
+      }
+
+          .wrapper {
+       
+            width:90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            overflow: hidden;
+            text-align: center;
+            height: auto;
+          }
+    
+          .wrapper h1 {
+            font-size:4.4vw;
+            padding-top:5vw;
+          } 
+          
+          .wrapper h2 {
+            font-size: 3.2vw;
+          }
+          
+          .wrapper p{
+          font-size: 3.2vw;
+          }
+         
+          .wrapcont{
+          position: relative;
+          left:5%;
+          text-align: left;
+          width:90%;
+          height:auto;
+          } 
+      
+             .product-img img{
+              width:100%;
+              border-radius: 7px 7px 0 0;
+                } 
+    
+
+    .contact{
+        height:65vw;
+        font-size: 3vw;
+        padding-top: 0vw;
+      }
+      
+      .contact h1{
+        font-size: 4vw;
+        padding-right: 0;
+        padding-top: 2vw;
+      
+      }
+      
+      .contactsect{
+        display: initial;
+      }
+      
+      .contact h2{
+       font-size:2.3vw;
+      }
+      
+      .contact h3{
+       font-size: 2.3vw;
+       height: 2vw;
+       }
+      
+       .contact a{
+         text-decoration: none;
+         color: grey;
+       }
+      
+       .cl h3{
+         padding-right: 10%;
+       }
+      
+       .yround4{
+        width:2.5vw;
+        height:2.5vw;
+        bottom:2.6vw;
+        left:53vw;
+      }
+      
+      .yround5{
+        width:2.5vw;
+        height:2.5vw;
+        bottom:5.1vw;
+        left:57vw;
+      }
+      
+      .yround6{
+        width:2.5vw;
+        height:2.5vw;
+        bottom:2.6vw;
+        left:53vw;
+      }
+      
+      .socic1{
+        width:4vw;
+        height:4vw;
+        left:48%;
+      }
+      
+       .footer{
+        height:4vw;
+        font-size: 2vw;
+       }
+      
+
+}
+
+
+/* ..................................................MOBILES................................................... */
+/* ..................................................MOBILES................................................... */
+
+
+@media (max-width: 480px) {
+
+  .tbblock{
+    height:18vw;
+  }
+
+    .title{
+        height:9vw;
+        width:90%;
+        font-size: 4.7vw;
+        position: absolute;
+     top:40%;
+    }
+    
+    .backb{
+                          
+        width:40%;
+        position: absolute;
+        top:3vw;
+        right:5vw;
+        font-size: 3.3vw;
+      }
+
+      iframe{
+        width:80vw;
+      }
+      
+      .popup{
+        width:80vw;
+      }
+
+     .wrapper {
+       
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+        text-align: center;
+        height: auto;
+      }
+
+      .wrapper h1 {
+        font-size:4.4vw;
+        padding-top:5vw;
+      } 
+      
+      .wrapper h2 {
+        font-size: 3.2vw;
+      }
+      
+      .wrapper p{
+      font-size: 3.2vw;
+      }
+     
+      .wrapcont{
+      position: relative;
+      left:5%;
+      text-align: left;
+      width:90%;
+      height:auto;
+      } 
+  
+         .product-img img{
+          width:100%;
+          border-radius: 7px 7px 0 0;
+            } 
+
+
+    .contact{
+        height:105vw;
+        font-size: 4vw;
+        padding-top: 0vw;
+      }
+      
+      .contact h1{
+        font-size: 6vw;
+        padding-right: 0;
+        padding-top: 2vw;
+      
+      }
+      
+      .contactsect{
+        display: initial;
+      }
+      
+      .contact h2{
+       font-size:3.3vw;
+      }
+      
+      .contact h3{
+       font-size: 3.3vw;
+       height: 2vw;
+       }
+      
+       .contact a{
+         text-decoration: none;
+         color: grey;
+       }
+      
+       .cl h3{
+         padding-right: 10%;
+       }
+      
+       .yround4{
+        width:3.5vw;
+        height:3.5vw;
+        bottom:3.6vw;
+        left:57vw;
+      }
+      
+      .yround5{
+        width:3.5vw;
+        height:3.5vw;
+        bottom:7.1vw;
+        left:62vw;
+      }
+      
+      .yround6{
+        width:3.5vw;
+        height:3.5vw;
+        bottom:3.6vw;
+        left:57vw;
+      }
+      
+      .socic1{
+        width:6vw;
+        height:6vw;
+        left:47%;
+      }
+      
+       .footer{
+        height:6vw;
+        font-size: 3vw;
+       }
+      
+
+}

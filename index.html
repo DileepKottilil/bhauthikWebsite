@@ -1,0 +1,838 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bhauthik.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans&family=Noto+Serif:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
+    <title>Bhauthik</title>
+    <link rel="icon" href="assets/img/fav_symbol.png" type="image/gif" sizes="16x16" >
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top 
+            }, 800, function(){
+          
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+            
+          } // End if
+        });
+      });
+    </script>
+	<script>
+	  $(document).ready(function(){
+		$(".hamburger").on("click", function(){
+		  $(".navbar").toggleClass("open");
+		});
+	  });
+	</script>
+</head>
+<body>
+  <div class='hscrollcorr' id='home'></div>
+    <div class='burger-nav' >
+		<a class='hamburger'>
+			<div id="menuToggle">
+				<input type="checkbox" />
+				<span id="span1"></span>
+				<span id="span2"></span>
+				<span id="span3"></span>
+			</div>
+		</a>
+	</div>
+	<div class='navbar'>
+	  <ul>
+		<li><a  href='#home'><div class='navbara'>Home</div></a></li>
+		<li ><a href='#about'><div class='navbara'>About</div></a></li>
+		<li ><a href='courses.html'><div class='navbara'>Courses</div></a></li>
+		<li ><a href='#mentors'><div class='navbara'>Founders</div></a></li>
+		<li ><a href='#chiefmentors'><div class='navbara'>Mentors</div></a></li>
+		<li ><a href='#contact'><div class='navbara'>Contact</div></a></li>
+	  </ul>
+	</div> 
+<!-- Next Batch Announcement
+    <div id='clos' class="overlay0">
+      <div class="popup0">
+        <h2>Announcement</h2>
+        <a class="close0" onclick="document.getElementById('clos').style.visibility='hidden',document.getElementById('clos').style.opacity='0';">&times;</a>
+        <div class="content0">
+          <img src="assets/img/poster.jpeg"/>
+          <div class="btp"><a href="courses.html">view course</a></div>
+        </div>
+
+      </div>
+    </div>
+Next Batch Announcement Ends here -->
+
+<!-- Results -->
+    <div id='clos' class="overlay0">
+      <div class="popup0">
+        <a class="close0" onclick="document.getElementById('clos').style.visibility='hidden',document.getElementById('clos').style.opacity='0';">&times;</a>
+		<div class="content0">
+		<!--<img src="assets/img/poster.jpeg"/>-->
+		<!-- Slide-->
+		<div id="slideshow">
+			<script>
+				  document.getElementById('recentresult1').style.visibility = "hidden";
+				  document.getElementById('recentresult2').style.visibility = "hidden";
+			</script>
+			<div class="recentresult1" style="">
+				<!--<div>
+					<h2 style="margin-top:5px;text-align:center;">RECENT RESULTS</h2>
+				</div> --> 
+				<!--<h2 style="font-family: 'Roboto', sans-serif;font-size: 2.2vw;color: #fb8b24;text-align:center;">RECENT RESULTS</h2>-->
+				<div style="margin-top:50px;height:500px;width:540px;margin-left: auto;margin-right: auto;display: block;">
+					<img src="assets/img/RecentResults.jpeg" style="border-radius: 7px;">
+				</div>
+				<!--<div class="gatescore">
+					<h4>Name:Student 1 &nbsp;&nbsp;&nbsp;&nbsp;GATE Score: Test Score</h4>
+				</div> -->
+				<!--<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);color:white;">Pretty cool eh? This slide is proof the content can be anything.</div>
+				-->
+			</div>
+			<div>
+			<!-- Pretty cool eh? This slide is proof the content can be anything.-->
+				<div style="margin-top:50px;height:480px;width:540px;margin-left: auto;margin-right: auto;display: block;">
+					<img src="assets/img/why_wait.jpg" style="border-radius: 7px;">
+				</div>
+				<div class="btp"><a href="courses.html">Join Bhauthik</a></div>
+			</div>
+		</div>
+		<!-- slideshow script-->
+		<script>
+			$("#slideshow > div:gt(0)").hide();
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			  .fadeOut(1000)
+			  .next()
+			  .fadeIn(1000)
+			  .end()
+			  .appendTo('#slideshow');
+			}, 8000);
+		</script>
+		<!-- slideshow script-->
+		<!-- Slide -->
+		  
+		</div>
+
+      </div>
+    </div>
+<!-- Results -->
+
+	<div class='home' >
+	<div class="parallax">
+		<div class='ad '>
+			<div class='prevbtn'><a><</a></div>
+			<div class="nextbtn"><a>></a></div>
+			<ul class="newsticker">
+			  <li><a href='courses.html'>Admission started for CSIR NET/JRF/GATE/JEST, register today to learn with IITians</a></li>
+			</ul>
+			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+			<script src="js/newsTicker.js"></script>
+		</div>
+	    <script>
+			$('.newsticker').newsTicker({
+				row_height: 30,
+				max_rows: 1,
+				speed: 600,
+				direction: 'up',
+				duration: 4000,
+				autostart: 1,
+				pauseOnHover: 1,
+				prevButton:  $('.prevbtn'),
+				nextButton:  $('.nextbtn')
+			});
+	    </script>
+		<div class="logo"><img src='assets/img/logo4.svg'/></div>
+		<h2><span class='large'>CSIR NET <span class='red'>|</span> GATE <span class='red'>|</span> JEST <span class='red'>|</span> GRE <br/>online coaching exclusively by <span class='red'>IIT</span>ians</span></h2>
+		<div class="coursebox"><h2> I would like to know <br/>more!</h2>
+			<div class="cbt"><a href="courses.html">COURSE DETAILS</a></div>
+		</div>
+		<div class="regbox"><h2>I would like to join Bhauthik!</h2>
+			<div class="rbt"><a href="#popuptop2">Join Now</a></div>
+		</div>
+	</div>
+	<div class='ascrollcorr' id='about'></div>
+	<div id="popuptop1" class="overlay">
+		<div class="popup">
+			<h2>Registration</h2>
+			<a class="close" href="#home">&times;</a>
+			<div class="content">
+			  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfsAreTc97SbX3F98cjxue-6irrmxn_QqkA96HQRGXSnXYNA/viewform?embedded=true" width="640" height="1285" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+			</div>
+		</div>
+	</div>
+	<div id="popuptop2" class="overlay">
+		<div class="popup">
+			<h2>Registration</h2>
+			<a class="close" href="#home">&times;</a>
+			<div class="content">
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfsAreTc97SbX3F98cjxue-6irrmxn_QqkA96HQRGXSnXYNA/viewform?embedded=true" width="640" height="1360" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+			</div>
+		</div>
+	</div>
+	<div class='about' >
+		<div class='darktint'>
+			<div class='abouttitle' > 
+				<h1>Who We Are</h1>
+			</div>
+			<div class='aboutp'>  
+				<p align='justify'>We are a bunch of IIT grads passionate about teaching and helping our students reach their full potential. We have moulded an effective and proven teaching formula from our own experiences while tackling various competitive exams like NET / GATE / JEST. At Bhauthik, our mentors are proactive researchers from all around the globe, who are also highly skilled at the art of teaching. We assure you that cracking a competitive exam is not just based on your subject knowledge and IQ, but more on your ability to work hard and a bit of determination. Don't worry; we are here to help you cultivate this habit of smart-learning through our uniquely devised strategies. 
+					  And you get all these benefits without burning a hole in your pockets!
+				</p>
+			</div> 
+			<div id="slideshow2">
+			<!-- what makes us unique-->
+				<div class='features'>
+					<h2>What Makes Us Unique?</h2>
+					<ul>
+						<li>Problem-oriented live classes</li>
+						<li>Weekly online test-series</li>
+						<li>100+ solved problems per week</li>
+						<li>Career-based webinars</li>
+						<li>Bonus classes on special topics</li>
+						<li>Motivational sessions </li>
+						<li>E-training with worldwide researchers</li>
+						<li>Guest sessions by eminent professors</li>
+						<li>Topic-wise simulations and interactive demonstrations</li>
+					</ul>
+				</div>
+				<!-- what makes us unique-->
+				<!-- Testimonial-->
+				<div class='testmfeatures'>
+					<h2>Testimonials</h2>
+					<ul>
+						<li>I humbly thank Bhauthik Academy of Physics for providing quality coaching</li>
+						<li> with a wonderful bunch of teachers and a technical team. They put       </li>
+						<li> themselves in the shoes of students, understand and motivate them to do </li>
+						<li> hard work by overcoming their weak points. The well-organized resources </li>
+						<li> such as live classes, topic-wise weekly tests, revision, and mock tests </li>
+						<li> encouraged me to study the subjects and practice well.Topics that are   </li>
+						<li> confusing and hard to visualize mentally for better understanding like  </li>
+						<li> Fourier transform, relativity, etc. were explained using simulations.   </li>
+						<li> The online exam portal which is similar to the real exam portal helps   </li>
+						<li> to get familiarize with and to avoid mistakes at the time of exams.     </li>
+                                                <li>--<b style="color: #fb8b24;"><I>Sarath, PhD student (University of West Bohemia, Czech Republic)</I></b></li>
+                                                
+					</ul>
+                                        
+				</div>
+				<div class='testmfeatures'>
+					<h2>Testimonials</h2>
+					<ul>
+						
+                                                <li>My journey from offline to online mode of learning during Covid-19       </li>
+						<li>Pandemic was with team Bhauthik. Bhauthik academy has a prefixed         </li>
+						<li> strategy to complete the syllabus within the stipulated time. The       </li>
+						<li>tutors of the academy make sure that they follow the same structure      </li>
+						<li> and time plan throughout the course without compromising on the         </li>
+						<li>quality of teaching and study material. Alongside the team uses          </li>
+						<li>their experiences in the research field to develop various demonstrations</li>
+						<li> using computer programmings. It helped me to understand Their           </li>
+						<li>effective two hours daily classes also made sure that I get enough       </li>
+						<li> material and problems to work out for the rest of the day.              </li>
+                                                <li>--<b style="color: #fb8b24;"><I>Unnimaya, PhD student (JNCASR Banglore)</I></b></li>
+						
+					</ul>
+				</div>
+				<!-- Testimonial-->
+			</div>
+			<!-- slideshow script-->
+			<script>
+                           $("#slideshow2 > div:gt(0)").hide();
+                            myVar=setInterval(function() { 
+				  $('#slideshow2 > div:first')
+				  .fadeOut(1000)
+				  .next()
+				  .fadeIn(1000)
+				  .end()
+				  .appendTo('#slideshow2');
+				}, 5000);
+                           $("#slideshow2 > div:gt(0)").mouseleave(function(){
+                                myVar=setInterval(function() { 
+				  $('#slideshow2 > div:first')
+				  .fadeOut(1000)
+				  .next()
+				  .fadeIn(1000)
+				  .end()
+				  .appendTo('#slideshow2');
+				}, 12000);
+                                });    
+                            $("#slideshow2 > div:gt(0)").mouseenter(function(){
+                                
+                                if(myVar)
+                                    {
+                                        clearInterval(myVar);        
+                                    }
+                                });
+			</script>
+			<!-- slideshow script-->
+			<!-- Slide -->
+			<!-- What Makes Us Unique? version 1 with testimonials-->
+		</div>
+		<div class='values'>
+			<div class="flip-card" data-aos="flip-left"  data-aos-duration="1500">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img class='philosophy' src="assets/img/philosophy.png" alt="philosophy" style="width:70%;height:auto;">
+					</div>
+					<div class="flip-card-back">
+						<p class='philocorr'>Premium education shouldn't really cost a premium. </p> 
+					</div>
+				</div>
+				<h4>OUR PHILOSOPHY</h4>
+			</div>
+			<div class="flip-card" data-aos="flip-up"  data-aos-duration="1500">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img class="mission" src="assets/img/mission.png" alt="mission" style="width:90%;height:auto;">
+					</div>
+					<div class="flip-card-back">
+						<p>Guiding<br/> the younger demographics of our nation to get into their dream institute.</p>
+					</div>
+				</div>
+				<h4>OUR MISSION</h4>
+			</div>
+			<div class="flip-card" data-aos="flip-right"  data-aos-duration="1500">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img class="vision" src="assets/img/vision.png" alt="vision" style="width:80%;height:auto;">
+					</div>
+					<div class="flip-card-back">
+						<p>To be<br/>  the ﬂag bearers of aﬀordable but a quality online learning experience.</p>
+					</div>
+				</div>
+				<h4>OUR VISION</h4>
+			</div> 
+		</div> 
+		<div class='ftext' >
+			<h2>Want to know more about us, get
+			in <span class='big1'>touch!</span> 
+			</h2>
+		</div>
+		<a href="tel:+91-6383530042">
+			<div class="yround1">
+				<img src='assets/img/call.ico'/>
+			</div>
+		</a>
+		<a href="mailto:contact@bhauthik.com">
+			<div class="yround2">
+				<img src='assets/img/mail1.ico'/>
+			</div>
+		</a>
+		<a href="https://api.whatsapp.com/send?phone=916383530042">
+			<div class='yround3'>
+				<img src='assets/img/whatsapp.ico'/>
+			</div>
+		</a>
+		<div class='mscrollcorr'id='mentors'></div>
+	</div>
+	<div class='dscrollcorr' id='qtc'></div>
+	<div class='parallax2'>
+	<!-- founders & mentors starting div-->
+	<div class='mentors'>
+	<!-- founders starting div-->
+	<div class='amentors'>
+		<div class='amenttitle'>
+			<h1>Founders</h1>
+		</div>
+		<div class='ament1'>
+			<div class='amentc'>
+				<img src='assets/img/Anu.jpeg'/>
+			</div>
+			<h3>Dr Anu Babusenan</h3>
+			<h4>PhD Physics, IIT MADRAS</h4>
+			<a href="#qtc" onclick="document.getElementById('qt').innerHTML=document.getElementById('anu').innerHTML; ">More about Anu</a>
+		</div>
+		<div class='ament2'>
+			<div class='amentc'>
+				<img src='assets/img/suraj2.jpeg'/>
+			</div>
+			<h3>Dr Suraj T S</h3>
+			<h4>PhD Physics, IIT MADRAS</h4>
+			<a href="#qtc" onclick="document.getElementById('qt').innerHTML=document.getElementById('suraj').innerHTML; ">More about Suraj</a>
+		</div>
+		<div class='ament3'>
+			<div class='amentc'>
+				<img src='assets/img/Dileep.jpeg'/>
+			</div>
+			<h3>Dr Dileep Kottilil</h3>
+			<h4>PhD Physics, IIT MADRAS</h4>
+			<a href="#qtc" onclick="document.getElementById('qt').innerHTML=document.getElementById('dileep').innerHTML; ">More about Dileep</a>
+		</div>
+		<div class='ament4'>
+			<div class='amentc'>
+				<img src='assets/img/Juvaid.jpeg'/>
+			</div>
+			<h3>Dr Juvaid</h3>
+			<h4>PhD Physics, IIT MADRAS & NUS</h4>
+			<a href="#qtc" onclick="document.getElementById('qt').innerHTML=document.getElementById('juvaid').innerHTML; ">More about Juvaid</a>
+		</div>
+		<div id='anu' class='details' style="visibility: hidden;">
+			<h1>Dr Anu Babusenan</h1>
+			<p align='justify' >
+				Dr Anu, a passionate researcher and teacher with more than seven years of experience in Graduate level teaching as well as in research, 
+				is one of the founding members of Bhauthik Academy of Physics. Currently, Anu is a research associate at MEMS, 
+				Department of Electrical Engineering, IIT Madras working on next-generation AMOLED displays. 
+				In 2020, she finished her PhD in Physics from Department of Physics, IIT Madras. 
+				She has specialized in spectroscopic studies of organic semiconductors. 
+				She is an expert in building time-resolved spectroscopic experimental setups. 
+				During her research at IITM, she also worked as a teaching assistant for MSc and BTech students. 
+				Anu is a university first rank holder and has cleared the competitive exams such as CSIR NET, JEST and GATE with top ranks. 
+				She has developed very novel and effective methods to improve the problem-solving skills, 
+				that can help her students to crack these examinations efficiently. 
+				She is also a science writer and science correspondent (pen-name: Anu B. Karingannoor’) 
+				in many leading Malayalam newspapers, explaining physics for the layman in simple terms.    
+			</p>
+			<a onclick="document.getElementById('qt').innerHTML=document.getElementById('default').innerHTML;">&times;</a>
+		</div>
+		<div id='suraj' class='details' style="visibility: hidden;">
+			<h1  class='detailsh1'>Dr Suraj T S</h1>
+			<p align='justify'>
+				Dr Suraj is one of the founders of Bhauthik Academy of Physics, 
+				which was his brainchild with the vision to encourage graduate-level students to take-up research as a career by keeping 
+				the education of the highest quality, at the same time affordable. He is an active researcher in the field of spintronics, 
+				magnetism and superconductivity. Currently, he is a senior research fellow at the Dept of Physics, IIT Madras. 
+				During his research career, he was a prestigious DAAD fellow in Walther Meissner Institute in Technical University of Munich (TUM) Germany. 
+				Besides, he was also a visiting researcher in the NUSNNI group headed by Prof T. Venkatesan (CEO, Neocera) 
+				at the National University of Singapore (NUS). Suraj was also a JASSO fellow at Shibaura Institute of Technology, Tokyo. 
+				Suraj's research interest includes spin current generation, detection and transmission using electrical and microwave techniques 
+				in strongly correlated systems. Before joining for PhD at IITM, he was a lecturer at Amrita school of arts and sciences, Kollam. 
+				He has a track record of qualifying CSIR JRF and GATE exams with top ranks. 
+				From his vast experience in teaching and research, his lectures will deal with the current research directions 
+				in solid-state physics as well as the elementary concepts.    
+			</p>
+			<a onclick="document.getElementById('qt').innerHTML=document.getElementById('default').innerHTML;">&times;</a>
+		</div>
+		<div id='dileep' class='details' style="visibility: hidden;">
+			<h1>Dr Dileep Kottilil</h1>
+			<p align='justify'>
+				Dr Dileep is a volunteer mentor of Bhauthik Academy of Physics. In 2013, he completed his MSc Physics from IIT Madras during which he 
+				developed his passion for computational and experimental physics. His PhD work is based on the experimental realization of 
+				polaritons (special quantum particles) in an artificial material called Metal-Organic Framework (MOF). 
+				His unique teaching style augmented with self-written physics simulations helps students understand the confusing topics like 
+				relativity in a matter of minutes. He is also a proactive science blogger, machine learning programmer, optical-systems consultant, 
+				software developer and amateur cover-art designer.    
+			</p>
+			<a onclick="document.getElementById('qt').innerHTML=document.getElementById('default').innerHTML;">&times;</a>
+		</div>
+		<div id='juvaid' class='details' style="visibility: hidden;">
+			<h1>Dr Juvaid</h1>
+			<p align='justify'>
+				Dr  Juvaid is a passionate scientist and an energetic teacher who is currently completing his joint-PhD in Physics from IIT Madras 
+				and NUS Singapore. He is specialized in experimental condensed matter physics and an expert in 2D device fabrication for 
+				green-energy applications. He has a remarkable talent in presenting complex concepts simple. During his Mtech and PhD at IIT Madras, 
+				he has supervised and devised many experiments for IIT-BTech and Mtech students as a teaching assistant for more than four years. 
+				He has also worked as a visiting researcher at University of Bristol, UK . Apart from his interest in research and teaching, 
+				he is also an active student counsellor at IIT Madras and NUS Singapore.
+			</p>
+			<a onclick="document.getElementById('qt').innerHTML=document.getElementById('default').innerHTML;">&times;</a>
+		</div>
+		<!-- Founder details closes here -->   
+		<div class='qtext' id='default' style="visibility: hidden;" >
+			<h2>A good <span class='big'>TEACHER</span> can inspire <span class='big'>HOPE</span>, ignite the
+				<span class='big'>IMAGINATION</span>, and instill a love of <span class='big'>LEARNING</span>. 
+			</h2>
+			<h6>-BRAD HENRY</h6>
+		</div>
+		<!-- -->   
+		<div class='atrapezoid' >
+			<div class='quote'><h1>,,</h1></div>
+			<div class="qt" id='qt'>
+				<div class='qtext' >
+					<h2>A good <span class='big'>TEACHER</span> can inspire <span class='big'>HOPE</span>, ignite the
+						<span class='big'>IMAGINATION</span>, and instill a love of <span class='big'>LEARNING</span>. 
+					</h2>
+					<h6>-BRAD HENRY</h6>
+				</div>
+			</div>
+			<div class='quote'>
+				<h1>,,</h1>
+			</div>
+		</div>
+	</div>
+	<!-- founders closing div-->
+	<!-- founders details is over-->
+	<!-- Chief mentors starting div-->
+	<div style="bottom: 0;height:58px;" id='chiefmentors'></div>
+	<div class='bmentors'>
+		<div class='bmenttitle'>
+			<h1>Chief Mentors</h1>
+		</div>
+		<div id='d1c' style="visibility: hidden;">
+			<h3 style=" color:#fb8b24 ;  ">Praveen</h3>
+			<li style="list-style-type: none; padding-top: 1vw; ">
+				<h4>MSc Physics, IIT Madras</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>MTech Nanotechnology, IIT Madras</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>Research interest: Thermal and electronic properties of 2D materials</h4>
+			</li>
+			<div style="font-size: 2.3vw;font-weight: bolder;">
+				<a  onclick="document.getElementById('d1').innerHTML=document.getElementById('d1d').innerHTML;">&times;</a>
+			</div> 
+		</div>
+		<div id='d2c' style="visibility: hidden;">
+			<h3 style=" color:#fb8b24 ;  ">Hari</h3>
+			<li style="list-style-type: none; padding-top: 1vw; ">
+				<h4>MSc Physics, NIT Trichy</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>PhD (doing), Department of<br/>Physics, IIT Madras</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>Research interest: General relativity and quantum field theory in curved spacetime</h4>
+			</li>
+			<div style="font-size: 2.3vw;font-weight: bolder;">
+				<a  onclick="document.getElementById('d2').innerHTML=document.getElementById('d2d').innerHTML;">&times;</a>
+			</div> 
+		</div>
+                <!-- Adding Indu Suresh -->
+                <div id='d3c' style="visibility: hidden;">
+			<h3 style=" color:#fb8b24 ;  ">Indu Suresh</h3>
+			<li style="list-style-type: none; padding-top: 1vw; ">
+				<h4>MSc Physics, University of Calicut</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>PhD (doing), Department of<br/>Physics, IIT Tirupati</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>Research interest: Modeling and characterization of non-thermal low temperature plasma</h4>
+			</li>
+			<div style="font-size: 2.3vw;font-weight: bolder;">
+				<a  onclick="document.getElementById('d3').innerHTML=document.getElementById('d3d').innerHTML;">&times;</a>
+			</div> 
+		</div>
+                <!-- Added Indu Suresh-->
+		<div class='bment1' id='d1d' style="visibility: hidden;">
+			<div class='bmentc'>
+				<img src='assets/img/Praveen.jpeg'/>
+			</div>
+			<h3>Praveen</h3>
+			<h4>MSc Physics, IIT MADRAS</h4>
+			<h4 style="padding-top: 0;" >MTech, IIT Madras</h4>
+			<a onclick="document.getElementById('d1').innerHTML=document.getElementById('d1c').innerHTML;">More about Praveen</a>
+		</div>
+		<div class='bment2' id='d2d' style="visibility: hidden;">
+			<div class='bmentc'>
+				<img src='assets/img/Hari.jpg'/>
+			</div>
+			<h3>Hari</h3>
+			<h4>MSc Physics, NIT Trichy</h4>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Madras</h4>
+			<a onclick="document.getElementById('d2').innerHTML=document.getElementById('d2c').innerHTML;">More about Hari</a>
+		</div>
+                <!-- Adding Indu Suresh -->
+                <div class='bment3' id='d3d' style="visibility: hidden;">
+			<div class='bmentc'>
+				<img src='assets/img/InduSuresh.jpg'/>
+			</div>
+			<h3>Indu Suresh</h3>
+			<h4>MSc Physics, University of Calicut</h4>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Tirupati</h4>
+			<a onclick="document.getElementById('d3').innerHTML=document.getElementById('d3c').innerHTML;">More about Indu</a>
+		</div>
+                <!-- Added Indu Suresh-->
+		<div class='bment1' id='d1'>
+			<div class='bmentc'>
+				<img src='assets/img/Praveen.jpeg'/>
+			</div>
+			<h3>Praveen</h3>
+			<h4>MSc Physics, IIT MADRAS</h4>
+			<h4 style="padding-top: 0;" >MTech, IIT Madras</h4>
+			<a onclick="document.getElementById('d1').innerHTML=document.getElementById('d1c').innerHTML;">More about Praveen</a>
+		</div>
+		<div class='bment2' id='d2'>
+			<div class='bmentc'>
+				<img src='assets/img/Hari.jpg'/>
+			</div>
+			<h3>Hari</h3>
+			<h4>MSc Physics, NIT Trichy</h4>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Madras</h4>
+			<a onclick="document.getElementById('d2').innerHTML=document.getElementById('d2c').innerHTML;">More about Hari</a>
+		</div>
+                <!-- Adding Indu Suresh -->
+                <div class='bment3' id='d3'>
+			<div class='bmentc'>
+				<img src='assets/img/InduSuresh.jpg'/>
+			</div>
+			<h3>Indu Suresh</h3>
+			<h4>MSc Physics, University of Calicut</h4>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Tirupati</h4>
+			<a onclick="document.getElementById('d3').innerHTML=document.getElementById('d3c').innerHTML;">More about Indu</a>
+		</div>
+                <!-- Added Indu Suresh -->
+		<!-- mentors section quote 2-->
+		<div class='ctrapezoid'>
+			<div class='qt2'>
+				<h2>no matter how<br/></be><span class='big3'>hard</span> you work,<br/>someone else is<br/>working <span class='big3'>harder.</span>
+				</h2> 
+				<h6><span class='big3'>-</span> Elon musk <span class='big3'>-</span></h6> 
+			</div>
+		</div>
+	</div><!-- chief mentors closing div-->  
+        <!-- other mentors starting div-->  
+        <div class='cmentors'>
+		<div class='cmenttitle'>
+			<h1>Other Mentors</h1>
+		</div>
+		<div id='od1c' style="visibility: hidden;">
+			<h3 style=" color:#fb8b24 ;  ">Amal A.M.</h3>
+			<li style="list-style-type: none; padding-top: 1vw; ">
+				<h4>MSc Physics, University of Hyderabad</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>PhD (doing), Department of<br/>Physics, IIT Madras</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>Research interest: Non equilibrium statistical mechanics, active matter systems</h4>
+			</li>
+			<div style="font-size: 2.3vw;font-weight: bolder;">
+				<a  onclick="document.getElementById('od1').innerHTML=document.getElementById('od1d').innerHTML;">&times;</a>
+			</div> 
+		</div>
+		<div id='od2c' style="visibility: hidden;">
+			<h3 style=" color:#fb8b24 ;  ">Aswathi Sampanraj</h3>
+			<li style="list-style-type: none; padding-top: 1vw; ">
+				<h4>MTech Nanotechnology, IIT Madras</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>PhD (doing), Department of<br/>Physics, IIT Madras</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>Research interest: Thermal properties of 2D materials</h4>
+			</li>
+			<div style="font-size: 2.3vw;font-weight: bolder;">
+				<a  onclick="document.getElementById('od2').innerHTML=document.getElementById('od2d').innerHTML;">&times;</a>
+			</div> 
+		</div>
+                <div id='od3c' style="visibility: hidden;">
+			<h3 style=" color:#fb8b24 ;  ">Diya Murali</h3>
+			<li style="list-style-type: none; padding-top: 1vw; ">
+				<h4>BS-MS Mathematics, IISER Trivandrum</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>PhD (doing), Department of<br/>Mathematics, IIT Madras</h4>
+			</li>
+			<li style="list-style-type: none; ">
+				<h4>Research interest: Game theory</h4>
+			</li>
+			<div style="font-size: 2.3vw;font-weight: bolder;">
+				<a  onclick="document.getElementById('od3').innerHTML=document.getElementById('od3d').innerHTML;">&times;</a>
+			</div> 
+		</div>
+		<div class='cment1' id='od1d' style="visibility: hidden;">
+			<div class='cmentc'>
+				<img src='assets/img/Amal.jpg'/>
+			</div>
+			<h3>Amal A.M.</h3>
+			<h4>MSc Physics, University of Hyderabad</h4>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Madras</h4>
+			<a onclick="document.getElementById('od1').innerHTML=document.getElementById('od1c').innerHTML;">More about Amal</a>
+		</div>
+		<div class='cment2' id='od2d' style="visibility: hidden;">
+			<div class='cmentc'>
+				<img src='assets/img/Ashwathy.jpg'/>
+			</div>
+			<h3>Aswathi Sampanraj</h3>
+			<h4>MTech Nanotechnology, IIT Madras</h4><br/>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Madras</h4>
+			<a onclick="document.getElementById('od2').innerHTML=document.getElementById('od2c').innerHTML;">More about Aswathi</a>
+		</div>
+                <div class='cment3' id='od3d' style="visibility: hidden;">
+			<div class='cmentc'>
+				<img src='assets/img/Divya.jpg'/>
+			</div>
+			<h3>Diya Murali</h3>
+			<h4>BS-MS Mathematics, IISER Trivandrum</h4>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Madras</h4>
+			<a onclick="document.getElementById('od3').innerHTML=document.getElementById('od3c').innerHTML;">More about Divya</a>
+		</div>
+		<div class='cment1' id='od1'>
+			<div class='cmentc'>
+				<img src='assets/img/Amal.jpg'/>
+			</div>
+			<h3>Amal A.M.</h3>
+			<h4>MSc Physics, University of Hyderabad</h4>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Madras</h4>
+			<a onclick="document.getElementById('od1').innerHTML=document.getElementById('od1c').innerHTML;">More about Amal</a>
+		</div>
+		<div class='cment2' id='od2'>
+			<div class='cmentc'>
+				<img src='assets/img/Ashwathy.jpg'/>
+			</div>
+			<h3>Aswathi Sampanraj</h3>
+			<h4>MTech Nanotechnology, IIT Madras</h4><br/>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Madras</h4>
+			<a onclick="document.getElementById('od2').innerHTML=document.getElementById('od2c').innerHTML;">More about Aswathi</a>
+		</div>
+                <div class='cment3' id='od3'>
+			<div class='cmentc'>
+				<img src='assets/img/Divya.jpg'/>
+			</div>
+			<h3>Diya Murali</h3>
+			<h4>BS-MS Mathematics, IISER Trivandrum</h4>
+			<h4 style="padding-top: 0;" >PhD (doing), IIT Madras</h4>
+			<a onclick="document.getElementById('od3').innerHTML=document.getElementById('od3c').innerHTML;">More about Divya</a>
+		</div>
+		<div class='cmenttitle2'>
+			<h1>Technical Experts</h1>
+		</div>
+		<div class='cment4'>
+			<div class='cmentc corr'>
+				<img src='assets/img/Aswin.jpeg'/>
+			</div>
+			<h3>Aswin Eapen</h3>
+			<h4>BTech Eng. Physics, NIT CALICUT<br/>PhD (doing), NUS SINGAPORE</h4>
+		</div>
+		<!-- Removing Sahoo
+		<div class='cment5'>
+			<div class='cmentc corr'>
+				<img src='assets/img/subhamoy.jpeg'/>
+			</div>
+			<h3>Subhamoy Sahoo</h3>
+			<h4>MSc, IIT MADRAS<br/>PhD (doing), IIT MADRAS</h4>
+		</div> -->
+		<div class='cment5'>
+			<div class='cmentc'>
+				<img src='assets/img/Rahulraj.jpeg'/>
+			</div>
+			<h3>Rahul Raj</h3>
+			<h4>MSc, NIT CALICUT<br/>PhD (doing), IIT MADRAS</h4>
+		</div>
+		<div class='cment6'>
+			<div class='cmentc'>
+				<img src='assets/img/rahulvr.jpeg'/>
+			</div>
+			<h3>Rahul V R</h3>
+			<h4>MSc, HCU<br/>PhD (doing), IIT MADRAS</h4>
+		</div>
+		<div class='cment7'>
+			<div class='cmentc'>
+				<img src='assets/img/Sruthibhai.jpeg'/>
+			</div>
+			<h3>Sruthibhai P V</h3>
+			<h4>BS-MS, IISER BHOPAL<br/>Project Associate, IIT MADRAS</h4>
+		</div>
+		<!-- mentors section quote 2-->
+		<!-- <div class='ctrapezoid'>
+			<div class='qt2'>
+				<h2>no matter how<br/></be><span class='big3'>hard</span> you work,<br/>someone else is<br/>working <span class='big3'>harder.</span>
+				</h2> 
+				<h6><span class='big3'>-</span> Elon musk <span class='big3'>-</span></h6> 
+			</div>
+		</div>-->
+                <!-- close other mentors -->
+        </div> <!-- close other mentors -->
+	</div><!-- founders & mentors closing div-->  
+        </div><!-- parallax closing div-->  
+	<div class='joinquote' align='justify'>
+		<div class='qt3'>
+		   <h2>Join the <span class='big4'>Bhauthik</span> family</h2><br/>
+		   <h3>and we will make sure that the<br/>journey to your dream institute</h3><br/>
+		   <h2>will be an enriching one<span class='big4'>.</span></h2>
+		</div>
+	</div>
+	<div class='registration'>
+		<h2>
+			<span class='big5'>register</span> for our courses today<span class='big5'>!</span> 
+		</h2>
+		<div class="bt2">
+			<a href="#popup2">csir net/ jrf / gate / jest</a>
+		</div>
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<h2>Registration</h2>
+				<a class="close" href="#contact">&times;</a>
+				<div class="content">
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfsAreTc97SbX3F98cjxue-6irrmxn_QqkA96HQRGXSnXYNA/viewform?embedded=true" width="640" height="1285" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				</div>
+			</div>
+		</div>
+		<div id="popup2" class="overlay">
+			<div class="popup">
+				<h2>Registration</h2>
+				<a class="close" href="#contact">&times;</a>
+				<div class="content">
+				  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfsAreTc97SbX3F98cjxue-6irrmxn_QqkA96HQRGXSnXYNA/viewform?embedded=true" width="640" height="1360" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='whatsappquote'>
+		<div>
+			<h2>
+				need to know a bit more about<br/>our <span class='big6'>courses</span> before registration<span class='big6'>?</span>
+			</h2>
+		</div> 
+		<div class="bt3">
+			<a href="courses.html">courses</a>
+		</div>
+	</div>
+	<div class='contact' id='contact'>
+		<div class='contactsect'>
+			<h2>E-mail</h2>
+			<a href="mailto:contact@bhauthik.com">
+				<h3>contact@bhauthik.com</h3>
+			</a>
+		</div>
+		<div class='contactsect cl'>
+			<h2>Call</h2>
+			<h3>6383530042 : 
+				<span>  
+					<a href="https://api.whatsapp.com/send?phone=916383530042">
+						<div class='yround4'>
+							<img src='assets/img/whatsapp.ico'/>
+						</div>
+					</a>
+					<a href="tel:+91-6383530042">
+						<div class="yround5">
+							<img src='assets/img/call.ico'/>
+						</div>
+					</a>
+				</span>
+			</h3>
+		<!--	<h3>8939343607 : 
+			<span>
+				<a href="https://api.whatsapp.com/send?phone=918939343607">
+				<div class='yround6'>
+					<img src='assets/img/whatsapp.ico'/>
+				</div>
+				</a>
+			</span>
+			</h3> -->
+		</div> 
+		<div class='contactsect'>
+			<h2>Social Links</h2>
+			<a href="https://www.facebook.com/Bhauthik">
+				<div class='socic1'>
+					<img src='assets/img/fb.ico'/>
+				</div>
+			</a>
+		</div>
+    </div>
+    <div class='footer'>
+		<h4>Copyright &COPY; Bhauthik2020</h4>
+	</div>
+</body>
+</html>
