@@ -2094,6 +2094,20 @@ font-size: 2.2vw;
 padding-left: 2.7vw;
 line-height:2.6vw ;
 }
+.testmfeatures{
+left:5%;
+top:33vw;
+}
+
+.testmfeatures h2{
+font-size: 4vw;
+}
+
+.testmfeatures li{
+font-size: 2.2vw;
+padding-left: 2.7vw;
+line-height:2.6vw ;
+}
 
 .values{
 top:72vw;
@@ -2913,6 +2927,20 @@ font-size: 5vw;
 }
 
 .features li{
+font-size: 3.2vw;
+padding-left: 4vw;
+line-height:4.6vw ;
+}
+.testmfeatures{
+left:5%;
+top:63vw;
+}
+
+.testmfeatures h2{
+font-size: 5vw;
+}
+
+.testmfeatures li{
 font-size: 3.2vw;
 padding-left: 4vw;
 line-height:4.6vw ;
