@@ -1427,7 +1427,7 @@ margin-right:5vw;
                 text-align: center;
                 background:transparent;
                 overflow: hidden;
-                margin-top: -300px;
+                /*margin-top: -300px;*/
               }
             
             .cmentors img{
@@ -1757,7 +1757,7 @@ padding-left: 0%;
 }
 
 .testmfeatures li{
-  font-size: 1.0vw;
+  font-size: 1.2vw;
   font-family: 'Roboto', sans-serif;
   letter-spacing: .05vw;
   line-height:1.6vw ;
@@ -2418,6 +2418,130 @@ margin-right:10vw;
                         top:58vw;
                         left:0;  
                      } 
+/* cement seond section*/
+.cmentors{
+              height:195vw;
+            }
+          
+          .cmentors img{
+              height:100%;
+              width:110%;  
+          }
+
+          .cmenttitle{
+            font-size: 2.8vw;
+            height:8vw;
+            width:100%;
+            float:left;
+            padding-left: 5%;
+           }
+        
+        .cmenttitle h1{
+          float:left;
+        }
+
+        .cment1{
+            width:26vw;
+            right:5%;
+            top:12vw;
+            
+        }
+        
+        .cment2{
+            width:26vw;
+            right:37%;
+            top:12vw;
+            
+        }
+        
+        .cment3{
+            width:26vw;
+            left:5%;
+            top:12vw;
+        }
+        
+          .cmentc{
+        height:16vw;
+        width:16vw;
+        margin-left: 5vw;
+        margin-right:5vw;
+          }
+        
+        
+                      .cmentors h3{
+                        font-size: 2.8vw;
+                      }
+        
+                      .cmentors h4{
+                        font-size: 2vw;
+        
+                      }
+        
+                      .cmentors a{
+                        color:#fb8b24 ;
+                          font-size: 2vw;
+                         
+                      }
+
+                      .cmenttitle2{
+                        height:8vw;
+                        width:100%;
+                        font-size: 2.8vw;
+                        float:left;                   
+                        padding-left: 5%;
+                        top:122vw;
+                        left:0;
+                       }
+                    
+                    .cmenttitle2 h1{
+                      float:left;
+                    }
+
+                    .cment4{
+                      width:36vw;
+                      right:15%;
+                      top:165vw;
+                  }
+        
+                  .cment5{
+                    width:36vw;
+                    left:15%;
+                    top:165vw;
+                }
+
+                .corr{
+                  margin-left: 10vw;
+                  margin-right:10vw;
+                }
+        
+                .cment6{
+                  width:26vw;
+                  right:5%;
+                  top:135vw;
+              }
+        
+              .cment7{
+                width:26vw;
+                right:37%;
+                top:135vw;
+            }
+        
+            .cment8{
+              width:26vw;
+              left:5%;
+              top:135vw;
+          }
+        
+
+                      .btrapezoid {
+                       
+                      height: 64vw;
+                        width: 100%;
+                        top:58vw;
+                        left:0;  
+                     } 
+
+/* cment second section*/
 
                      .qt2{
                       width:56vw;
@@ -3255,6 +3379,124 @@ margin-right:20vw;
                         top:150vw;
                         left:0;  
                      } 
+/* cment 3 section */
+.cmentors{
+              height:435vw;
+            }
+          
+          .cmentors img{
+              height:100%;
+              width:110%;  
+          }
+
+          .cmenttitle{
+            font-size: 3.8vw;
+            height:10vw;
+            width:100%;
+            float:left;
+            padding-left: 25%;
+           }
+        
+        .cmenttitle h1{
+          float:left;
+        }
+
+        .cment1{
+            width:40vw;
+            right:5%;
+            top:18vw;
+            
+        }
+        
+        .cment2{
+            width:40vw;
+            right:30%;
+            top:80vw;
+            
+        }
+        
+        .cment3{
+            width:40vw;
+            left:5%;
+            top:18vw;
+        }
+        
+          .cmentc{
+        height:30vw;
+        width:30vw;
+        margin-left: 5vw;
+        margin-right:5vw;
+          }
+        
+        
+                      .cmentors h3{
+                        font-size: 3.8vw;
+                      }
+        
+                      .cmentors h4{
+                        font-size: 3vw;
+        
+                      }
+        
+                      .cmentors a{
+                        color:#fb8b24 ;
+                          font-size: 3vw;
+                         
+                      }
+
+                      .cmenttitle2{
+                        height:10vw;
+                        width:100%;
+                        font-size: 3.8vw;
+                        float:left;                   
+                        padding-left: 20%;
+                        top:235vw;
+                        left:0;
+                       }
+                    
+                    .cmenttitle2 h1{
+                      float:left;
+                    }
+
+                    .cment4{
+                      width:40vw;
+                      right:30%;
+                      top:380vw;
+                  }
+        
+                  .cment5{
+                    width:40vw;
+                    left:5%;
+                    top:320vw;
+                }
+        
+                .cment6{
+                  width:40vw;
+                  right:5%;
+                  top:320vw;
+              }
+        
+              .cment7{
+                width:40vw;
+                right:5%;
+                top:260vw;
+            }
+        
+            .cment8{
+              width:40vw;
+              left:5%;
+              top:260vw;
+          }
+        
+                      .btrapezoid {
+                       
+                      height: 64vw;
+                        width: 100%;
+                        top:150vw;
+                        left:0;  
+                     } 
+
+/* cment 3 section */
 
                      .qt2{
                       width:76vw;
