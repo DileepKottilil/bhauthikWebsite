@@ -82,7 +82,7 @@ cursor: pointer;
   padding-bottom: 4vw;
   background: #fff;
   border-radius: 5px;
-  width: 40vw;
+  width: 35vw;
   position: relative;
   transition: all 1s ease-in-out;
   z-index: 2;
@@ -462,6 +462,9 @@ font-family: 'Poppins', sans-serif;
   right:8%;
   text-align: left;
   top:0vw;
+  /* Align testimonials*/
+  width:530px;
+  /* Align testimonials*/
   /* Mobile friendly removing margin-top:30px; */
   /*margin-top:30px;*/
 }
@@ -1742,6 +1745,9 @@ margin-right:5vw;
   right:8%;
   text-align: left;
   top:0vw;
+  /* Align testimonials*/
+  width:530px;
+  /* Align testimonials*/
    /* Mobile friendly removing margin-top:30px; */
   /*margin-top:30px;*/
 }
@@ -1768,6 +1774,9 @@ padding-left: 0%;
   letter-spacing: .05vw;
   line-height:1.6vw ;
   padding-left: 1.7vw;
+  /* Align testimonials*/
+  display: inline-block;
+ /* Align testimonials*/
 }
   
 /*--------------  Testimonial  ---------------------------------*/
