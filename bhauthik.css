@@ -99,7 +99,7 @@ overflow: hidden;
   position: absolute;
   top: 0px;
   right: 10px;
-  /*transition: all 100ms;*/
+  transition: all 100ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
