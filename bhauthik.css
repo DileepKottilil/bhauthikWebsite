@@ -2314,8 +2314,8 @@ margin-right:10vw;
             }
 
             .bmentors{
-             height:195vw;
-			 /*  height:30vw;*/
+            /* height:195vw;*/
+			 height:300vw;
             }
           
           .bmentors img{
@@ -3282,8 +3282,8 @@ margin-right:20vw;
             }
 
             .bmentors{
-				height:435vw;
-			  /* height:30vw;*/
+				/*height:435vw;*/
+			   height:300vw;
             }
           
           .bmentors img{
