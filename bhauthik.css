@@ -2394,8 +2394,8 @@ margin-right:10vw;
 
                     .bment4{
                       width:36vw;
-                      /*right:15%;*/
-					  right:37%;
+                      right:15%;
+					  /*right:37%;*/
                       top:165vw;
                   }
         
@@ -3363,7 +3363,8 @@ margin-right:20vw;
 
                     .bment4{
                       width:40vw;
-                      right:30%;
+                      /*right:30%;*/
+					  right:5%;
                       top:380vw;
                   }
         
