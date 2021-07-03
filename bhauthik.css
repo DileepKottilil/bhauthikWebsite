@@ -105,6 +105,9 @@ overflow: hidden;
   text-decoration: none;
   color: #333;
 }
+.popup0 .close0div {
+ height:10px;
+}
 .popup0 .close0:hover {
   color: #fb8b24;
 }
