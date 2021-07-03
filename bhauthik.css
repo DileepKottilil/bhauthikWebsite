@@ -2392,9 +2392,9 @@ margin-right:10vw;
                       float:left;
                     }
 
-                    .bment4{
+                   /* .bment4{
                       width:36vw;
-                      /*right:15%;*/
+                      right:15%;
                       top:165vw;
                   }
         
@@ -2425,7 +2425,7 @@ margin-right:10vw;
               width:26vw;
               left:5%;
               top:135vw;
-          }
+          } */
         
 
                       .btrapezoid {
@@ -3364,7 +3364,7 @@ margin-right:20vw;
                       width:40vw;
                       /*right:30%;*/
 					  right:5%;
-                      top:380vw;
+                      top:320vw;
                   }
         
                   .bment5{
@@ -3376,7 +3376,7 @@ margin-right:20vw;
                 .bment6{
                   width:40vw;
                   right:5%;
-                  top:320vw;
+                  top:260vw;
               }
         
               .bment7{
